@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure--qghk#8&u!guf1ro(w#80c=tagdg+lz@z-r&*s57hwl+k08ia)
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ecommerceweb-by-django-react.herokuapp.com',
+    'django-react-project-ecommerce.herokuapp.com',
     '127.0.0.1'
 ]
 
