@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useContext} from 'react'
+import React,{useState,useEffect,useContext,useCallback} from 'react'
 import Navbar from './Navbar'
 import temp from './temp.jpg'
 import {Link, useNavigate} from 'react-router-dom'
@@ -67,6 +67,7 @@ const Home = () => {
     }
     let data = await response.json()
     alert('Item added to Cart')
+    getItems()
   }
 
 

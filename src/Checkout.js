@@ -39,6 +39,8 @@ const Checkout = () => {
     setProducts(data.products)
     setCount(data.count)
     setTotal(data.total)
+    
+    console.log('data')
   }
 
   const handleSubmit=async()=>{

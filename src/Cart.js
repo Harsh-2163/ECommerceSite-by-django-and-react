@@ -35,6 +35,8 @@ const Cart = () => {
     setProducts(data.products)
     setCount(data.count)
     setTotal(data.total)
+    
+    console.log('data')
   }
 
   useEffect(()=>{
@@ -73,6 +75,7 @@ const Cart = () => {
     }
     let data = await response.json()
     alert('Item added to Cart')
+    getCart()
   }
   const handleDecreaseCount=async(ide)=>{
     let temp;
@@ -98,6 +101,7 @@ const Cart = () => {
     }
     let data = await response.json()
     alert('Item removed from Cart')
+    getCart()
     
   }
   return (
